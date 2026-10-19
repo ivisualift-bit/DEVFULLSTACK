@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portefeuille Noir</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/zwaq.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="page-lwla.html">Dar Jild</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="page-lwla.html#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-lwla.html#apropos">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-lwla.html#produits">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-lwla.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <p class="mb-4">
+          <a href="page-lwla.html#produits" class="retour">&larr; Retour aux produits</a>
+        </p>
+
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4">
+            <img src="tsawer/bztam-k7el.jpg" alt="Portefeuille en cuir noir" />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <h1 class="titre">Portefeuille Noir</h1>
+            <p class="prix">220 DH</p>
+            <p>Ce portefeuille fin en cuir noir se glisse facilement dans une poche. Il est coupé et cousu à la main dans notre atelier de la médina.</p>
+
+            <ul class="mb-4">
+              <li>6 emplacements pour cartes</li>
+              <li>2 poches pour les billets</li>
+              <li>Dimensions : 10 x 8 cm</li>
+            </ul>
+
+            <h5>Commander ce produit</h5>
+            <form id="form-commande" onsubmit="commander(event, 'Portefeuille Noir', 220)">
+              <div class="mb-3">
+                <label class="form-label">Nom</label>
+                <input type="text" id="nom" class="form-control" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Téléphone</label>
+                <input type="tel" id="telephone" class="form-control" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Ville</label>
+                <input type="text" id="ville" class="form-control" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Quantité</label>
+                <input
+                  type="number"
+                  id="quantite"
+                  class="form-control"
+                  value="1"
+                  min="1"
+                  oninput="calculerTotal(220)"
+                />
+              </div>
+
+              <p id="total" class="prix">Total : 220 DH</p>
+
+              <button type="submit" class="btn btn-cuir">Commander</button>
+              <div id="msg-commande" class="message mt-3"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 text-center">
+      <p class="mb-0">&copy; 2026 Dar Jild - Médina de Marrakech</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/khdma.js"></script>
+  </body>
+</html>

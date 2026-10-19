@@ -1,0 +1,154 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5efe6;
+  color: #3b2416;
+}
+
+h1,
+h2,
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.navbar {
+  background: #3b2416;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+.nav-link:hover {
+  color: #e0a872 !important;
+}
+
+.accueil {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../tsawer/hero.jpg") center / cover;
+  background-color: #3b2416;
+  color: white;
+  padding: 150px 0;
+}
+
+.accueil h1 {
+  font-size: 2.8rem;
+}
+
+.titre {
+  color: #a0522d;
+}
+
+.btn-cuir {
+  background: #a0522d;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+
+.btn-cuir:hover {
+  background: #3b2416;
+  color: white;
+}
+
+.btn-contour {
+  border: 2px solid #a0522d;
+  color: #a0522d;
+  border-radius: 25px;
+  padding: 8px 20px;
+  margin: 4px;
+}
+
+.btn-contour:hover {
+  background: #a0522d;
+  color: white;
+}
+
+.card-body .btn {
+  margin-bottom: 8px;
+}
+
+.liste-panier {
+  list-style: none;
+  padding: 0;
+}
+
+.liste-panier li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ebe0d0;
+}
+
+.btn-retirer {
+  border: 1px solid #a0522d;
+  color: #a0522d;
+  border-radius: 15px;
+  padding: 2px 12px;
+  margin-left: 10px;
+  font-size: 0.85rem;
+}
+
+.btn-retirer:hover {
+  background: #a0522d;
+  color: white;
+}
+
+.message {
+  display: none;
+}
+
+.bg-clair {
+  background: #ebe0d0;
+}
+
+.card {
+  border: none;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card img {
+  border-radius: 0;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.retour {
+  color: #a0522d;
+  text-decoration: none;
+}
+
+.retour:hover {
+  color: #3b2416;
+}
+
+.prix {
+  color: #a0522d;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+footer {
+  background: #3b2416;
+  color: #f5efe6;
+}
+
+@media (max-width: 576px) {
+  .accueil {
+    padding: 100px 0;
+  }
+
+  .accueil h1 {
+    font-size: 2rem;
+  }
+}
